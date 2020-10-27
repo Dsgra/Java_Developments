@@ -1,0 +1,100 @@
+/**
+ *
+ * @author david
+ */
+public class PrimerVideo {
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+       // carro bochito = new carro();
+        // bochito.encender();
+        int edad = 2;
+        if(edad == 2) {
+            System.out.println("Dario, es el menor con una edad de: " + edad + " años ");
+        } else {
+            System.out.print("No se puede determinar que alumno es más joven...);
+        }
+        String nombre = "Darío";
+        switch (nombre){
+            case "Darío": System.out.println("Dario, es capaz de pintar con su varita del 1 al 10 y del 10 al 1");
+            case "Jesús": System.out.println("Jesús, es capaz de contar de un solo vistazo todos los asteriscos que formen una pirámide creada por Ángel");
+            case "Angel": System.out.println("Angel, es capaz de pintar un triángulo de asteriscos invertido tan sólo con el pensamiento.");
+        }
+            
+        }      
+}
+// ===============================================================================================
+
+// Respuesta apropiada
+
+ */
+public class PrimerVideo {
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+       // carro bochito = new carro();
+        // bochito.encender();
+        int edad1 = 17;
+        int edad2 = 12;
+        int edad3 = 2;
+        int edadDario = 0;
+        int a = 0;
+        int contAsteriscos = 0;
+        int tamPiramide = 5;
+        
+        if(edad1 < edad2){
+            if(edad1 < edad3){
+                edadDario = edad1;
+            } else {
+                edadDario = edad3;
+            }
+        } else if (edad2 < edad3){
+            edadDario = edad2;
+        }else {
+            edadDario = edad3;
+        }
+        System.out.println("Darío tiene " + edadDario + " Años y su habilidad es la siguiente: ");
+        System.out.print("");
+        
+        while (a < 10) {
+            a++;
+            System.out.print(a);
+        }
+        System.out.println("");
+        do {
+            System.out.print(a);
+            a--;
+        } while (a > 0);
+        System.out.println("");
+        System.out.println("Ángel tiene la habilidad de pintar una pirámide invertida");
+        System.out.print("");
+       
+        for(int i = tamPiramide; i>=0; i--){
+            for(int j = tamPiramide; j>0; j--){
+                if(i>=j){
+                    System.out.print("");
+                    contAsteriscos = contAsteriscos + 1;
+                } else { 
+                    System.out.print("");
+                }
+            }
+            for(int j = 0; j<= tamPiramide; j++){
+                if(i>=j){
+                    System.out.print("");
+                    contAsteriscos = contAsteriscos + 1;
+                } else {
+                    System.out.print("");
+                }
+            }
+                    System.out.print("");
+
+        }
+                System.out.print("");
+                System.out.println("Y Jesús puede contar todos los asteriscos de la pirámide:");
+                System.out.println("La pirámide esta formada por " + contAsteriscos + " asteriscos");
+                System.out.print("");
+            
+        }      
+}
